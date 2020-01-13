@@ -37,9 +37,7 @@
 
     <!-- Starlight CSS -->
     <link rel="stylesheet" href="{{asset('admin/css/starlight.css')}}">
-    @push('css')
-        
-    @endpush
+    @stack('css')
   </head>
 
   <body>
