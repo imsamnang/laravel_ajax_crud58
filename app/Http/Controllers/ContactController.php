@@ -34,7 +34,8 @@ class ContactController extends Controller
 
     public function edit(Contact $contact)
     {
-        //
+			$contact = Contact::findOrFail($contact->id);
+			return response($contact);
     }
 
     public function update(Request $request, Contact $contact)

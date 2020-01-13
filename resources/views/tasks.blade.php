@@ -40,11 +40,11 @@
                 <tbody>
                     @foreach($tasks as $task)
                     <tr>
-                        <td>{{$task->id}}</td>
-                        <td>{{$task->task}}</td>
-                        <td>{{$task->created_at}}</td>
-                        <td>{{$task->description}}</td>
-                        <td>{{($task->done) ? 'Yes' : 'No'}}</td>
+                        <td contenteditable>{{$task->id}}</td>
+                        <td contenteditable>{{$task->task}}</td>
+                        <td contenteditable>{{$task->created_at}}</td>
+                        <td contenteditable>{{$task->description}}</td>
+                        <td contenteditable>{{($task->done) ? 'Yes' : 'No'}}</td>
                         <td>
                             <a onclick="event.preventDefault();editTaskForm({{$task->id}});" href="#" class="edit open-modal" data-toggle="modal" value="{{$task->id}}"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a onclick="event.preventDefault();deleteTaskForm({{$task->id}});" href="#" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>

@@ -9,6 +9,44 @@ Route::get('/dashboard',function(){
   return view('admin.dashboard');
 });
 
+Route::get('/cpanel',function(){
+  return view('layouts.klorofil.klorofil');
+});
+
+Route::get('/cpanel/form',function(){
+  return view('klorofil.form');
+});
+
+Route::get('/cpanel/table',function(){
+  return view('klorofil.table');
+});
+
+Route::get('/cpanel/button',function(){
+  return view('klorofil.button');
+});
+
+Route::get('/cpanel/select2',function(){
+  return view('klorofil.select2');
+});
+
+
+
+Route::get('/beer/angkor',function(){
+  return view('klorofil.angkor');
+});
+
+Route::get('/beer/tiger',function(){
+  return view('klorofil.tiger');
+});
+
+Route::get('/beer/anchor',function(){
+  return view('klorofil.anchor');
+});
+
+Route::get('/beer/abc',function(){
+  return view('klorofil.abc');
+});
+
 Route::get('/datarange', 'DateRangeController@index');
 Route::get('/getInvoice','DateRangeController@getInvoice');
 Route::post('/daterange/fetch_data', 'DateRangeController@fetch_data')->name('daterange.fetch_data');
@@ -55,6 +93,8 @@ Route::group(['prefix' => 'tasks'], function () {
 });
 
 Route::prefix('students')->group(function(){
+    Route::get('/preview','StudentController@preview')->name('students.preview');
+    Route::get('/prnpriview','StudentController@prnpriview');    
 	Route::get('/','StudentController@index')->name('students.index');
 	Route::get('/getDataTable','StudentController@get')->name('students.get');
 	Route::post('/store','StudentController@store')->name('students.store');
@@ -89,3 +129,17 @@ Route::get('api/contact','ContactController@apiContact')->name('api.contact');
 // multiple database connection
 Route::get('/get-data/{connection}/{schema?}', 'UserController@getUsers');
 Route::get('/get-keywords/{connection}', 'KeyWordsController@getKeyWords');
+
+Route::group(['as'=>'cruds.','prefix'=>'cruds'],function(){
+	Route::get('/','AjaxCrudController@index')->name('index');
+	Route::post('/saveData','AjaxCrudController@saveData')->name('save');
+});
+
+Route::get('/livetable', 'LiveTableController@index');
+Route::get('/livetable/fetch_data', 'LiveTableController@fetch_data');
+Route::post('/livetable/add_data', 'LiveTableController@add_data')->name('livetable.add_data');
+Route::post('/livetable/update_data', 'LiveTableController@update_data')->name('livetable.update_data');
+Route::post('/livetable/delete_data', 'LiveTableController@delete_data')->name('livetable.delete_data');
+
+Route::get('/x-edit/get-users', 'XEditTableController@getUsers');
+Route::post('/x-edit/update-user', 'XEditTableController@updateUser');

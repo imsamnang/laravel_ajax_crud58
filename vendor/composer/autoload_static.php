@@ -414,6 +414,7 @@ class ComposerStaticInit983c373f2b2df649a199ea5124a4d735
     );
 
     public static $classMap = array (
+        'App\\AjaxCrud' => __DIR__ . '/../..' . '/app/AjaxCrud.php',
         'App\\Article' => __DIR__ . '/../..' . '/app/Article.php',
         'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -421,6 +422,7 @@ class ComposerStaticInit983c373f2b2df649a199ea5124a4d735
         'App\\Customer' => __DIR__ . '/../..' . '/app/Customer.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Helpers\\LogActivity' => __DIR__ . '/../..' . '/app/Helpers/LogActivity.php',
+        'App\\Http\\Controllers\\AjaxCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/AjaxCrudController.php',
         'App\\Http\\Controllers\\ArticleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ArticleController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -434,6 +436,7 @@ class ComposerStaticInit983c373f2b2df649a199ea5124a4d735
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\KeyWordsController' => __DIR__ . '/../..' . '/app/Http/Controllers/KeyWordsController.php',
         'App\\Http\\Controllers\\LanguageTranslationController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageTranslationController.php',
+        'App\\Http\\Controllers\\LiveTableController' => __DIR__ . '/../..' . '/app/Http/Controllers/LiveTableController.php',
         'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',
         'App\\Http\\Controllers\\StudentController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudentController.php',
         'App\\Http\\Controllers\\TasksController' => __DIR__ . '/../..' . '/app/Http/Controllers/TasksController.php',
@@ -460,6 +463,7 @@ class ComposerStaticInit983c373f2b2df649a199ea5124a4d735
         'App\\Student' => __DIR__ . '/../..' . '/app/Student.php',
         'App\\Task' => __DIR__ . '/../..' . '/app/Task.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\XEditTable' => __DIR__ . '/../..' . '/app/XEditTable.php',
         'Arcanedev\\LogViewer\\Commands\\CheckCommand' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/CheckCommand.php',
         'Arcanedev\\LogViewer\\Commands\\ClearCommand' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/ClearCommand.php',
         'Arcanedev\\LogViewer\\Commands\\Command' => __DIR__ . '/..' . '/arcanedev/log-viewer/src/Commands/Command.php',

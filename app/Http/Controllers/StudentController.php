@@ -9,6 +9,17 @@ use Illuminate\Support\Facades\File;
 class StudentController extends Controller
 {
 
+		public function preview()
+		{
+			$students = Student::all();
+			return view('print.printstudent')->with('students', $students);
+		}
+		public function prnpriview()
+		{
+			$students = Student::all();
+			return view('print.students')->with('students', $students);
+		}
+			
     public function index()
     {
 			$students = Student::orderby('id','DESC')->get();

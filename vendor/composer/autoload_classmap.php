@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\AjaxCrud' => $baseDir . '/app/AjaxCrud.php',
     'App\\Article' => $baseDir . '/app/Article.php',
     'App\\Category' => $baseDir . '/app/Category.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
@@ -13,6 +14,7 @@ return array(
     'App\\Customer' => $baseDir . '/app/Customer.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Helpers\\LogActivity' => $baseDir . '/app/Helpers/LogActivity.php',
+    'App\\Http\\Controllers\\AjaxCrudController' => $baseDir . '/app/Http/Controllers/AjaxCrudController.php',
     'App\\Http\\Controllers\\ArticleController' => $baseDir . '/app/Http/Controllers/ArticleController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -26,6 +28,7 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\KeyWordsController' => $baseDir . '/app/Http/Controllers/KeyWordsController.php',
     'App\\Http\\Controllers\\LanguageTranslationController' => $baseDir . '/app/Http/Controllers/LanguageTranslationController.php',
+    'App\\Http\\Controllers\\LiveTableController' => $baseDir . '/app/Http/Controllers/LiveTableController.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
     'App\\Http\\Controllers\\StudentController' => $baseDir . '/app/Http/Controllers/StudentController.php',
     'App\\Http\\Controllers\\TasksController' => $baseDir . '/app/Http/Controllers/TasksController.php',
@@ -52,6 +55,7 @@ return array(
     'App\\Student' => $baseDir . '/app/Student.php',
     'App\\Task' => $baseDir . '/app/Task.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\XEditTable' => $baseDir . '/app/XEditTable.php',
     'Arcanedev\\LogViewer\\Commands\\CheckCommand' => $vendorDir . '/arcanedev/log-viewer/src/Commands/CheckCommand.php',
     'Arcanedev\\LogViewer\\Commands\\ClearCommand' => $vendorDir . '/arcanedev/log-viewer/src/Commands/ClearCommand.php',
     'Arcanedev\\LogViewer\\Commands\\Command' => $vendorDir . '/arcanedev/log-viewer/src/Commands/Command.php',
